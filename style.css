@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.playerDetails {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.currentPlayer {
+    height: 50px;
+    width: 200px;
+    border-radius: 60px;
+    background-color: lightblue;
+    box-shadow: 0 0 5px 1px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tic-tac-toe-block {
+    height: 60%;
+    width: 25%;
+    border-radius: 10px;
+    /* background-color: rgba(211, 211, 211, 0); */
+    /* box-shadow: 0 0 20px 2px lightgrey; */
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.game-block {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 120px;
+    width: 120px;
+    box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.468);
+    border-radius: 10px;
+    transition: 500ms;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xxx-large;
+    background-color: lightyellow;
+}
+
+.box:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 2px #ffffffa5;
+}
+.box1,.box4,.box2,.box5{
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.box7,.box8{
+    border-right: 2px solid white;
+}
+.box3,.box6{
+    border-bottom: 2px solid white;
+}
+
+.newGame {
+    height: 50px;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.newGameBtn {
+    height: 50px;
+    width: 200px;
+    border-radius: 60px;
+    background-color: lightblue;
+    box-shadow: 0 0 5px 1px white;
+    border: none;
+}
+
+
+/* JS */
+.active{
+    display: flex;
+}
